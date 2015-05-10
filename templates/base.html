@@ -1,0 +1,21 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Acobbate | {% block title %} {% endblock %}</title>
+	<link rel="stylesheet" href=" {% static 'css/bootflat.min.css' %}">
+</head>
+<body>
+{% block content %}
+{% endblock %}
+<script src="{% static 'js/icheck.min.js' %}"></script>
+<script src="{% static 'js/jquery.fs.selecter.min.js' %}"></script>
+<script src="{% static 'js/jquery.fs.stepper.min.js' %}"></script>
+<script>
+{% block js %}
+{% endblock %}
+</script>
+</body>
+</html>
